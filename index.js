@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import sharp from 'sharp';
 import path from 'path';
 import yargs from 'yargs';
@@ -51,11 +53,9 @@ async function compressImage(filePath, outputFileName, quality, deleteOriginal) 
   }
 
   const outputFile = path.join(path.dirname(filePath), fileName + '.webp');
-  
+
   try {
-    await sharp(filePath)
-      .webp({ quality, effort: 6, smartSubsample: true })
-      .toFile(outputFile);
+    await sharp(filePath).webp({ quality, effort: 6, smartSubsample: true }).toFile(outputFile);
 
     console.log(`Compression and convert succesfully ${filePath} → ${outputFile}`);
 
@@ -65,7 +65,6 @@ async function compressImage(filePath, outputFileName, quality, deleteOriginal) 
     }
   } catch (error) {
     console.error('Failed to Compression and convert', error);
-
   }
 }
 

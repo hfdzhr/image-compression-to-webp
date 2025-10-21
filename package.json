@@ -2,15 +2,18 @@
   "name": "image-compression",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "image-compress": "./index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
-    "inquirer": "^12.10.0",
     "sharp": "^0.34.4",
     "yargs": "^17.7.2"
   }
