@@ -54,7 +54,7 @@ for (const input of argv._) {
       inputFiles.push(inputPath);
     }
   } else {
-    console.warn(`⚠️ Path not found: ${inputPath}`);
+    console.warn(`Path not found: ${inputPath}`);
   }
 }
 
