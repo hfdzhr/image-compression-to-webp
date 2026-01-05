@@ -142,6 +142,6 @@ async function compressImage(filePath, renameFileName, quality, deleteOriginal) 
     console.error(`Failed to process ${filePath}:`, error.message);
   }
 }
-
-// TEST GIT 2
+// Test
+// Test 2
   
