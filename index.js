@@ -144,3 +144,4 @@ async function compressImage(filePath, renameFileName, quality, deleteOriginal) 
 }
 
 // TEST GIT 2
+  
