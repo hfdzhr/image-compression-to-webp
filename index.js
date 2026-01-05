@@ -142,6 +142,4 @@ async function compressImage(filePath, renameFileName, quality, deleteOriginal) 
     console.error(`Failed to process ${filePath}:`, error.message);
   }
 }
-// Test
-// Test 2
   
