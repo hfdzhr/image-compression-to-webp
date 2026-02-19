@@ -141,7 +141,4 @@ async function compressImage(filePath, renameFileName, quality, deleteOriginal) 
   } catch (error) {
     console.error(`Failed to process ${filePath}:`, error.message);
   }
-}
-
-// Ini testing perubahan di worktree baru
-  
+}  
